@@ -1,1 +1,310 @@
-My Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+	<div id="app">
+		
+	
+		<component v-bind:is="view"><compoennt>
+	</div>
+	<div class="layer"> 
+	<div class="bg-layer"></div>
+</div>
+<script type="text/template" id="tpl_home">
+
+	<section id="home" class="home"  >
+		<div class="content"  v-show="!isShow">
+
+			<div class="pic">
+			
+			<ul>
+	<li v-for="item in types">
+	<img v-bind:src="'img/icon/' + item.url" alt="">
+	<div class="black"></div>
+	</li>
+	
+</ul><div class="nav">
+<div class="showbox"  v-on:click="showbox"></div>
+</div>
+				
+				
+					<a href="#/resume" class="work">我的简历</a>
+				
+			</div>
+			<div class="header">
+					<h3 class="header-wrap">前端工程师</h3>
+					<div class="pro">
+						<h1 class="cur">我是
+							<span>关飞</span>
+						</h1>
+						<h1>既然喜欢那就
+							<span>行动吧</span>
+							,不然以后就没机会了!
+						</h1>
+						<h1>不忘
+							<span>初心</span>
+							,方得始终
+						</h1>
+						<h1>
+							<span>行动吧,</span>骚年
+						</h1>
+						<h1>
+							<span>坚持</span>才是捷径
+						</h1>
+						<h1>我还在上道的
+							<span>路上</span>,求带
+						</h1>
+
+					</div>
+
+					<div class="boke">一个记录时光的博客</div>
+				</div>
+		</div>
+
+	</section>
+</script>
+<script type="text/template" id="tpl_resume">
+<section id="resume" class="resume">
+<div class="sec" >
+	<div class="off">
+		<h1 class="title">My resume</h1>
+		
+		<div class="resumeBody">
+		<div class="summary">
+			<img width="90" height="110" align="right" class="headerImg" alt="关飞" src="img/icon/123.jpg" />
+			<h1>关飞</h1>
+			男
+			<span class="ver-line">|</span>
+			未婚
+			<span class="ver-line">|</span>
+			1993年6月生
+			<span class="ver-line">|</span>
+			户口：辽宁-葫芦岛
+			<span class="ver-line">|</span>
+			现居住于:北京
+			<br />17888845292
+			2年工作经验
+			<br />
+			身份证:21142119930608****
+			<p>15566478190</p>
+			<p>
+				E-mail：
+				<a href="mailto:727519010@foxmail.com">727519010@foxmail.com</a>
+			</p>
+		</div>
+		<dl class="details">
+			<dt>
+				<h5>求职意向</h5>
+			</dt>
+			<dd>
+				<ul>
+					<li> <strong>工作性质：</strong>
+						全职
+					</li>
+					<li> <strong>期望职业：</strong>
+						WEB前端开发、
+					</li>
+					<li>
+						<strong>期望行业：</strong>
+						计算机软件
+					</li>
+					<li>
+						<strong>工作地区：</strong>
+						北京
+					</li>
+					<li>
+						<strong>期望月薪：</strong>
+						10001-15000元/月
+					</li>
+					<li>
+						<strong>目前状况：</strong>
+						我目前处于离职状态，可立即上岗
+					</li>
+				</ul>
+			</dd>
+			<dt>
+				<h5>自我评价</h5>
+			</dt>
+			<dd>
+				<p style="width:574px; overflow:hidden;word-break: break-all; word-wrap:break-word;">
+					本人性格温和、谦虚、认真、能吃苦、有良好的团队合作能力。
+					<br/>
+					熟练掌握HTML，CSS，Javascript
+					<br/>
+					熟练使用jQuery/velocity/Zepto/Underscore快速完成页面交互，对用户体验，交互及用户需求有较好的理解
+					<br/>
+					熟练使用bootstrap快捷开发网页，熟悉使用响应式开发
+					<br/>
+					熟悉MVMVVM等设计模式，熟练使用Backbone，Vue，Angular框架进行开发
+					<br/>
+					html5，css3新特性，实现二维、三维动画的制作
+					<br/>
+					使用Sea.js/Require.js对项目进行模块化开发
+					<br/>
+					Ajax，能够使用Ajax进行前后台数据交互
+					<br/>
+					使用Less/Sass预处理语言对css进行优化和重构
+					<br/>
+					熟悉使用gulp,fis3等工程化工具简化开发
+					<br/>
+					知悉git版本控制工具及github远程仓库管理
+					<br/>
+				</p>
+			</dd>
+			<dt>
+				<h5>工作经历</h5>
+			</dt>
+			<dd>
+				<div class="work-experience">
+					<p>2015/03 -- 2016/08</p>
+					<h6>
+						沈阳示剑网络科技有限公司
+						<span class="ver-line">|</span>
+						web前端工程师
+					</h6>
+					
+					<p>
+						<strong>工作描述：</strong>
+						<br />
+						切图并编写html、css代码，将设计图编写成静态页面
+						<br/>
+						解决页面各种浏览器兼容性的问题
+						<br/>
+						编写js代码给界面添加交互
+						<br/>
+						配合产品经理完善产品交互体验
+						<br/>
+					</p>
+				</div>
+			</dd>
+			<dt>
+				<h5>项目经验</h5>
+			</dt>
+			<dd>
+				<div class="project-experience">
+					<p>2015/06 -- 2015/07</p>
+					<h6><a href="http://m.jjzs.com/wap/index.php/Cnm/Index/index.html" target="view_window">沈阳晋级装饰移动端</a></h6>
+					<div />
+					<p>
+						<strong>责任描述：</strong>
+						<br />
+						页面的实现及日常维护
+					</p>
+					<p>
+						<strong>项目简介：</strong>
+						<br />
+						沈阳晋级装修公司的移动端网站,为相关客户提供家装案例、装修预约、优惠活动等服务。
+						<br/>
+						使用html5、rem实现移动端的响应式布局
+						<br/>
+						定义路由规则，根据获取页面的hash值来选择渲染页面的组件
+						<br/>
+						通过ajax获取后台数据动态渲染到页面中
+						<br/>
+						使用fis3将文件的压缩合并、打包上线。
+						<br/>
+					</p>
+				</div>
+				<div class="project-experience">
+					<p>2015/03 -- 2015/07</p>
+					<h6><a href="http://www.huabao.bmw.com.cn/cn/zh/dealers/huabao/index.html" target="view_window">沈阳华宝web端</a></h6>
+					<div />
+					<p>
+						<strong>责任描述：</strong>
+						<br />
+						负责主要模块的实现
+					</p>
+					<p>
+						<strong>项目简介：</strong>
+						<br />
+						此项目是沈阳华宝汽车销售服务有限公司的官方网站,向客户提供BMW全线产品的汽车销售、配件供应、售后服务、信息反馈等服务。
+						<br/>
+						我负责本次迭代版本新添加页面的开发。开发过程中使用jQuery ，在开发的过程中，我花了许多时间阅读了相关代码和技术文档，顺利的完成了开发任务。
+						<br/>
+						根据UI设计师的原型图，使用DIV+CSS搭建符合W3C规范的静态页面。
+						<br/>
+						用css3为html添加相应的动画过渡。
+						<br/>
+						解决ie6/7/8/9常见兼容性问题。
+						<br/>
+						用jQuery为html添加相应交互。
+						<br/>
+						负责项目bug修复。
+						<br/>
+						维护和迭代项目，同时对前端的性能进行优化。
+						<br/>
+					</p>
+				</div>
+			</dd>
+			<dt>
+				<h5>教育经历</h5>
+			</dt>
+			<dd>
+				<div class="education-background">
+					<p>2011/07 -- 2014/07</p>
+					<h6>
+						沈阳职业技术学院计算机学院
+						<span class="ver-line">|</span>
+						图形图像制作
+						<span class="ver-line">|</span>
+						大专
+						<span class="ver-line">|</span>
+						统招
+					</h6>
+				</div>
+			</dd>
+			<dt>
+				<h5>培训经历</h5>
+			</dt>
+			<dd>
+				<div class="training">
+					<p>2014/11 -- 2015/03</p>
+					<h6>中软卓越</h6>
+					<p>
+						<div>
+							<strong>培训课程：</strong>
+							html、css、JavaScript、jQuery、模块化开发、Backbone VUE Angular1.0
+							<br />
+						</div>
+					</p>
+				</div>
+			</dd>
+		</dl>
+		
+	</div>
+
+		
+	</div> 
+
+	<a href="" class="goback " ></a>
+</div> <!-- .cd-modal -->
+
+<div class="layer"> 
+	<div class="bg-l`ayer">1111111111111111</div>
+</div>
+
+</section>
+</script>
+<script src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+	
+	<script type="text/javascript">
+	// $circleslis = $(".pro h1");
+	// var idx = 0;
+	// setInterval(function(){
+	// 	idx++;
+	// 	$circleslis.eq(idx).addClass("cur").siblings().removeClass("cur");
+	// 	},5000)
+	 </script>
+</body>
+</html>
